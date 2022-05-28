@@ -1,0 +1,31 @@
+@api = http://localhost:3000/api/roles
+
+###
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "fechaCreacion": "2022-05-29 00:00:00",
+    "nombre": "Nuevo dato de prueba uno",
+    "descripcion": "Descripcion de un dato de prueba"
+}
+
+###
+GET {{api}}/1
+
+
+###
+DELETE {{api}}/18
+
+###
+PUT {{api}}/6
+Content-Type: application/json
+
+{
+    "fechaCreacion": "2022-05-30 00:00:00",
+    "nombre": "Adminstrador de bases de datos de prueba",
+    "descripcion": "Descripcion de un dato de prueba"
+}
